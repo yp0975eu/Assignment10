@@ -19,14 +19,13 @@ public class Movies extends JFrame{
         pack();
         // set up retrofit class
         omdb = new Omdb();
+        movieNameTextField.setText("Ants");
         // event listeners
         searchButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 String text = movieNameTextField.getText();
                 if ( text.length() > 2){
-
-
                    omdb.getMovieByName(text);
 
                 } else {

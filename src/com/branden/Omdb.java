@@ -51,7 +51,8 @@ public class Omdb {
               } else {
                 System.out.println(response.raw());
                 // mystery output
-                //Gson body = response.body();
+                Gson body = response.body();
+                System.out.println(body);
             }
         } catch (IOException ex){
             System.out.println(ex); ex.printStackTrace();
