@@ -33,6 +33,7 @@ public class Omdb {
     }
     public void getMovieByName(String movieName){
         // create map to pass to parameters to getMovie
+        // hash map pairs aren't guaranteed to remain in order of placement
         HashMap<String, String> options = new HashMap<>();
         options.put("t",movieName);
         options.put("r","json");
